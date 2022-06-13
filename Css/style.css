@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Grillas */
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas:
+        "Nav Header Header Header"
+        "Nav Section-1 Section-1 Aside"
+        "Nav Section-2 Section-2 Aside"
+        "Nav Section-3 Section-3 Aside"
+        "Footer Footer Footer Footer";
+    background-color: rgb(34, 170, 215)
+}
+
+.Nav {
+    grid-area: Nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 170, 215);
+    margin-top: 20px;
+    width: 100%
+}
+
+.Nav a{
+    text-decoration: none;
+}
+
+.Nav li{
+    list-style: none
+}
+
+.Nav img {
+width: 150px;
+}
+
+/* Header */
+.Header {
+    grid-area: Header;
+    text-align: center;
+    background-color: rgb(34, 170, 215);
+    color: black;
+    height: 15vh;
+    padding-top: 20px;
+}
+
+.Header p {
+    margin: 15px auto
+}
+
+/* Section 1 */
+.Section-1 {
+    grid-area: Section-1;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Section-1 h4{
+margin-right: 300px;
+}
+
+.Section-1 div{
+    display: flex;
+    margin: 1rem .5rem
+}
+
+.Section-1 p{
+    max-width: 550px;
+    text-align: center;
+    margin: 1rem
+}
+
+.Section-1 img {
+    width: 300px;
+    padding-left: 2rem;
+}
+/* Section 2 */
+.Section-2 {
+    grid-area: Section-2;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.Section-2 h4{
+    text-align: center;
+    font-size: 1.5rem
+}
+
+/* Section 3 (la usare cuando altere las imagenes de propiedades */
+
+.Section-3 {
+    grid-area: Section-3;
+}
+
+.Aside {
+    grid-area: Aside;
+}
+
+/* Footer */
+.Footer {
+    grid-area: Footer;
+    background-color: rgb(34, 170, 215)
+}
+
+.Footer i {
+    font-size: 2rem;
+}
+
+.form div {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+ /* Formulario */
+.form {
+    grid-area: Section-2;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form input {
+    height: 2.5rem;
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #c6c6c6;
+}
+
+.form input[type=reset]:hover{
+    background-color: rgb(0, 160, 181);
+    color: white
+}
+
+
+.form input[type=submit]:hover {
+    background-color: rgb(0, 160, 181);
+    color: white;
+}
+
+
+/* media query */
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-areas:
+        "Nav Nav Nav Nav"
+        "Header Header Header Header"
+        "Section-1 Section-1 Section-1 Section-1 "
+        "Section-2 Section-2 Section-2 Section-2 "
+        "Section-3 Section-3 Section-3 Section-3"
+        "Footer Footer Footer Footer";        
+    }
+    .Aside{
+        display: none;
+    }
+    .Nav {
+        flex-direction: row;
+        padding: 20px;
+    }
+    .Nav ul{
+        display: flex;
+        /* flex-direction: row; */
+    }
+
+    .ul2{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .Section-1 img{
+        display: none;
+    }
+}
+
+
+/* header {
+    background-color: rgb(0, 128, 255);
+    font-style: oblique;
+    padding: 10px;
+}
+
+nav {
+    margin: 20px;
+    border: 5px solid;
+}
+
+li {
+    margin: 5px;
+    margin-left: 25px;
+}
+
+main {
+    background-color: aquamarine;
+}
+
+.imagenCasas {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 400px;
+    border: 2px solid;
+    margin: 5px;
+}
+
+footer {
+    background-color: rgb(0, 128, 255);
+    font-style: oblique;
+    padding: 10px;
+    border: 5px solid;
+} */
