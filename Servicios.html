@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Mi estilo -->
     <link rel="stylesheet" href="./Css/style.css">
     <title>SERVICIOS</title>
 </head>
 
 <body>
-    <header>
-        <h1>Inmobiliaria ADCORE</h1>
+    <div class="grilla">
 
-        <nav>
-
+        <nav class="Nav">
+            <!-- logo -->
+            <img src="./img/logo.jpg" alt="logo adcore" class="animate__animated animate__flash">
             <ul>
-
                 <Li>
                     <a href="./index.html">INICIO</a>
                 </Li>
                 <li> <a href="./propiedades.html">PROPIEDADES</a></li>
                 <li><a href="./Servicios.html">SERVICIOS</a>
                     <ul>
-                        <li>Tasación</li>
-                        <li>Alquileres</li>
-                        <li>Ventas</li>
+                        <li class="ul2">Tasación</li>
+                        <li class="ul2">Alquileres</li>
+                        <li class="ul2">Ventas</li>
                     </ul>
                 </li>
                 <li><a href="./Nosotros.html">NOSOTROS</a></li>
@@ -34,9 +38,14 @@
                 </li>
             </ul>
         </nav>
-    </header>
 
-    <main>
+        <header class="Header">
+            <h1>Bienvenido a Inmobiliaria ADCORE</h1>
+            <h3>El futuro de tus propiedades</h3>
+
+        </header>
+
+
         <table>
 
             <tr class="servicios">
@@ -53,17 +62,28 @@
                 <td>Publicamos tu propiedad en venta y nos encargamos de la publicidad y muestra de la misma</td>
 
         </table>
-    </main>
 
-    <footer>
-        <ol>
-            <li>Facebook</li>
-            <li>
-                <a href="https://www.instagram.com/inmobiliaria_adcore/">Instagram</a>
-            </li>
-            <li>Twitter</li>
-        </ol>
-    </footer>
+        <aside class="Aside">
+            <h4>Notas relacionadas</h4>
+            <ul>
+                <li><a href="#">Nota relacionada 1</a></li>
+                <li><a href="#">Nota relacionada 2</a></li>
+                <li><a href="#">Nota relacionada 3</a></li>
+                <li><a href="#">Nota relacionada 4</a></li>
+                <li><a href="#">Nota relacionada 5</a></li>
+            </ul>
+        </aside>
+
+
+        <footer class="Footer">
+
+            <ol>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </ol>
+        </footer>
+    </div>
 </body>
 
 </html>
