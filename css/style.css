@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.Section-1 {
+  grid-area: Section-1;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.Section-1 h4 {
+  margin-right: 300px; }
+
+.Section-1 div {
+  display: flex;
+  margin: 1rem .5rem; }
+
+.Section-1 p {
+  max-width: 550px;
+  text-align: center;
+  margin: 1rem; }
+
+.Section-1 img {
+  width: 300px;
+  padding-left: 2rem; }
+
+.Section-2 {
+  grid-area: Section-2;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem; }
+
+.Section-2 h4 {
+  text-align: center;
+  font-size: 1.5rem; }
+
+.Section-3 {
+  grid-area: Section-3; }
+
+.Footer {
+  grid-area: Footer;
+  background-color: #22aad7;
+  animation-name: navEnMovimiento;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in; }
+
+.Footer i {
+  font-size: 2rem; }
+
+@keyframes navEnMovimiento {
+  0% {
+    width: 15vw; }
+  15% {
+    width: 25vw; }
+  25% {
+    width: 50vw; }
+  50% {
+    width: 75vw;
+    background-color: #0606e1; }
+  75% {
+    width: 100vw; }
+  100% {
+    width: 0vw;
+    background-color: #22aad7; } }
+
+.form {
+  grid-area: Section-2;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.form input {
+  height: 2.5rem;
+  width: 350px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #c6c6c6; }
+
+.form input[type=reset]:hover {
+  background-color: #00a0b5;
+  color: white; }
+
+.form input[type=submit]:hover {
+  background-color: #00a0b5;
+  color: white; }
+
+.Aside {
+  grid-area: Aside; }
+
+@media (max-width: 768px) {
+  .grilla {
+    grid-template-areas: "Nav Nav Nav Nav" "Header Header Header Header" "Section-1 Section-1 Section-1 Section-1 " "Section-2 Section-2 Section-2 Section-2 " "Section-3 Section-3 Section-3 Section-3" "Footer Footer Footer Footer"; }
+  .Aside {
+    display: none; }
+  .Nav {
+    flex-direction: row;
+    padding: 20px; }
+  .Nav ul {
+    display: flex;
+    /* flex-direction: row; */ }
+  .ul2 {
+    display: none; } }
+
+@media (max-width: 480px) {
+  .Section-1 img {
+    display: none; } }

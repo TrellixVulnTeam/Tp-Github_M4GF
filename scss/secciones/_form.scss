@@ -1,0 +1,27 @@
+.form {
+    grid-area: Section-2;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form input {
+    height: 2.5rem;
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #c6c6c6;
+}
+
+.form input[type=reset]:hover{
+    background-color: rgb(0, 160, 181);
+    color: white
+}
+
+
+.form input[type=submit]:hover {
+    background-color: rgb(0, 160, 181);
+    color: white;
+}

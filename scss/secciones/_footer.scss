@@ -1,0 +1,34 @@
+.Footer {
+    grid-area: Footer;
+    background-color:  rgb(34, 170, 215);
+    animation-name: navEnMovimiento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+
+.Footer i {
+    font-size: 2rem;
+}
+
+@keyframes navEnMovimiento {
+    0%{ width: 15vw; 
+    }
+
+    15%{ width: 25vw; 
+    }
+
+    25%{ width: 50vw; 
+    }
+
+    50%{ width: 75vw;
+      background-color: rgb(6, 6, 225); 
+    }
+    
+    75%{ width: 100vw;
+    }
+
+    100%{ width: 0vw;
+      background-color:rgb(34, 170, 215);}
+ }
