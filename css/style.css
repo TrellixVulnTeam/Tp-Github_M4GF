@@ -87,6 +87,30 @@
   background-color: #00a0b5;
   color: white; }
 
+.Nav {
+  grid-area: Nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #22aad7;
+  margin-top: 20px;
+  width: 100%; }
+
+.Nav a {
+  text-decoration: none; }
+
+.Nav li {
+  list-style: none; }
+
+.Nav img {
+  width: 150px; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas: "Nav Header Header Header" "Nav Section-1 Section-1 Aside" "Nav Section-2 Section-2 Aside" "Nav Section-3 Section-3 Aside" "Footer Footer Footer Footer";
+  background-color: #22aad7; }
+
 .Aside {
   grid-area: Aside; }
 

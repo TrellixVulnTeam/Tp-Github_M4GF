@@ -9,8 +9,20 @@
 @import './secciones/seccion3';
 @import './secciones/footer';
 @import './secciones/form';
+@import './secciones/nav';
 
 
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas:
+        "Nav Header Header Header"
+        "Nav Section-1 Section-1 Aside"
+        "Nav Section-2 Section-2 Aside"
+        "Nav Section-3 Section-3 Aside"
+        "Footer Footer Footer Footer";
+    background-color: rgb(34, 170, 215)
+}
 
 .Aside {
     grid-area: Aside;
