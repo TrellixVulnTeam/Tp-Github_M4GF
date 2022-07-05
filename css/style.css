@@ -51,6 +51,7 @@
 
 .Footer {
   grid-area: Footer;
+  margin-top: 110px;
   background-color: #22aad7;
   animation-name: navEnMovimiento;
   animation-duration: 5s;
@@ -117,8 +118,17 @@
   width: 150px; }
 
 #imagenCasas {
-  max-width: 200px;
-  max-height: 200px; }
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-direction: row;
+  margin: 20px; }
+
+#texto {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center; }
 
 .grilla {
   display: grid;

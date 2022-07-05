@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Mi estilo -->
     <link rel="stylesheet" href="./Css/style.css">
-    <title>PROPIEDADES</title>
+    <title>Inmobiliaria ADCORE</title>
 </head>
 
 <body>
-    <header>
-        <h1>Inmobiliaria ADCORE</h1>
+    <div class="grilla">
 
-        <nav>
-
+        <nav class="Nav">
+            <!-- logo -->
+            <img src="./img/logo.jpg" alt="logo adcore" class="animate__animated animate__flash">
             <ul>
-
                 <Li>
                     <a href="./index.html">INICIO</a>
                 </Li>
                 <li> <a href="./propiedades.html">PROPIEDADES</a></li>
                 <li><a href="./Servicios.html">SERVICIOS</a>
                     <ul>
-                        <li>Tasación</li>
-                        <li>Alquileres</li>
-                        <li>Ventas</li>
+                        <li class="ul2">Tasación</li>
+                        <li class="ul2">Alquileres</li>
+                        <li class="ul2">Ventas</li>
                     </ul>
                 </li>
                 <li><a href="./Nosotros.html">NOSOTROS</a></li>
@@ -34,36 +38,54 @@
                 </li>
             </ul>
         </nav>
-    </header>
 
-    <main>
+        <header class="Header">
+            <h1>Bienvenido a Inmobiliaria ADCORE</h1>
+            <h3>El futuro de tus propiedades</h3>
+
+        </header>
+
         <!-- me gustaria corregir esta seccion con flexbox para poner las imagenes de 2 en 2 con sus descripciones -->
-        <div id="imagenCasas">
+        <div class="Section-1" id="imagenCasas">
+            <p id="texto">Hermosa Casa en barrio privado
+            Precio: 87000 Usd</p>
             <img src="./img/1.jfif" alt="img1">
-            <p>Hermosa Casa en barrio privado</p>
-            <p>Precio: 87000 Usd</p>
+            <p id="textoCasas">Duplex a estrenar
+            Precio: 65000</p>
             <img src="./img/4.jfif" alt="img2">
-            <p>Duplex a estrenar</p>
-            <p>Precio: 65000</p>
+
+        </div>
+        <div class="Section-2" id="imagenCasas">
+            <p id="texto">Casa en zona yerba buena (frente a country alto verde)
+            precio: 75000 usd</p>
             <img src="./img/9d7a66ef-abe3-40d5-a2c5-c803d9adb056.jfif" alt="img3">
-            <p>Casa en zona yerba buena (frente a country alto verde)</p>
-            <p>precio: 75000 usd</p>
+            <p id="texto">Amplio terreno en camino de sirga
+            Precio: 22000 usd</p>
             <img src="./img/ce4e05a1-355a-444c-aa0e-4883dabda199.jfif" alt="img4">
-            <p>Amplio terreno en camino de sirga</p>
-            <p>Precio: 22000 usd</p>
+
         </div>
 
-    </main>
+        <aside class="Aside">
+            <h4>Notas relacionadas</h4>
+            <ul>
+                <li><a href="#">Nota relacionada 1</a></li>
+                <li><a href="#">Nota relacionada 2</a></li>
+                <li><a href="#">Nota relacionada 3</a></li>
+                <li><a href="#">Nota relacionada 4</a></li>
+                <li><a href="#">Nota relacionada 5</a></li>
+            </ul>
+        </aside>
 
-    <footer>
-        <ol>
-            <li>Facebook</li>
-            <li>
-                <a href="https://www.instagram.com/inmobiliaria_adcore/">Instagram</a>
-            </li>
-            <li>Twitter</li>
-        </ol>
-    </footer>
+
+        <footer class="Footer">
+
+            <ol>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </ol>
+        </footer>
+    </div>
 </body>
 
 </html>
