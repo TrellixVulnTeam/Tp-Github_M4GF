@@ -1,11 +1,11 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: url(../img/fondo.jpg) no-repeat; }
 
 .Header {
   grid-area: Header;
   text-align: center;
-  background-image: linear-gradient(90deg, #22aad7 0%, #09a9f0 25%, #0087b1 65%, #006081 92%);
   color: black;
   height: 15vh;
   padding-top: 20px; }
@@ -51,31 +51,11 @@
 
 .Footer {
   grid-area: Footer;
-  margin-top: 110px;
-  background-color: #22aad7;
-  animation-name: navEnMovimiento;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in; }
+  margin-top: 200px;
+  background-color: #007bff; }
 
 .Footer i {
   font-size: 2rem; }
-
-@keyframes navEnMovimiento {
-  0% {
-    width: 15vw; }
-  15% {
-    width: 25vw; }
-  25% {
-    width: 50vw; }
-  50% {
-    width: 75vw;
-    background-color: #0606e1; }
-  75% {
-    width: 100vw; }
-  100% {
-    width: 0vw;
-    background-color: #22aad7; } }
 
 .form {
   grid-area: Section-2;
@@ -117,12 +97,8 @@
 .Nav img {
   width: 150px; }
 
-#imagenCasas {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  flex-direction: row;
-  margin: 20px; }
+#propiedades {
+  max-height: 700px; }
 
 #texto {
   display: flex;
@@ -130,11 +106,26 @@
   margin: 20px;
   text-align: center; }
 
+#logo {
+  width: 100px;
+  height: 100px; }
+
+#servicios {
+  max-width: 300px;
+  max-height: 300px; }
+
+#servicios1 {
+  max-width: 200px;
+  max-height: 200px; }
+
+#carrusel {
+  margin-top: 20px; }
+
 .grilla {
   display: grid;
   grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
   grid-template-areas: "Nav Header Header Header" "Nav Section-1 Section-1 Aside" "Nav Section-2 Section-2 Aside" "Nav Section-3 Section-3 Aside" "Footer Footer Footer Footer";
-  background-color: #22aad7; }
+  background-color: #007bff; }
 
 .Aside {
   grid-area: Aside; }
