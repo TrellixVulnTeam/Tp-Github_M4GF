@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background: url(../img/fondo.jpg) no-repeat;
+    background: url(../img/fondo.jpg);
     background-position: center;
     background-attachment: fixed;
     color: black;
@@ -59,6 +59,17 @@
 
     .ul2{
         display: none;
+    }
+    #servicios{
+        max-width: 100px;
+        max-height: 100px;
+        align-items: center;
+
+    }
+    #servicios1{
+        max-width: 75px;
+        max-height: 75px;
+        align-items: center;
     }
 }
 

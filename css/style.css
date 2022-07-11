@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background: url(../img/fondo.jpg) no-repeat;
+  background: url(../img/fondo.jpg);
   background-position: center;
   background-attachment: fixed;
   color: black; }
@@ -65,7 +65,8 @@
   min-height: 25vh;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: white; }
 
 .form input {
   height: 2.5rem;
@@ -129,7 +130,15 @@ nav {
     display: flex;
     /* flex-direction: row; */ }
   .ul2 {
-    display: none; } }
+    display: none; }
+  #servicios {
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center; }
+  #servicios1 {
+    max-width: 75px;
+    max-height: 75px;
+    align-items: center; } }
 
 @media (max-width: 480px) {
   .Section-1 img {
