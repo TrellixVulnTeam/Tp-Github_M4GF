@@ -1,10 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  background: url(../img/fondo.jpg) no-repeat; }
+  background: url(../img/fondo.jpg) no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: black; }
 
 .Header {
-  grid-area: Header;
+  grid-area: Heade;
   text-align: center;
   color: black;
   height: 15vh;
@@ -69,33 +72,18 @@
   width: 350px;
   text-align: center;
   border-radius: 15px;
-  background-color: #c6c6c6; }
+  background-color: #0ee7f6; }
 
 .form input[type=reset]:hover {
   background-color: #00a0b5;
-  color: white; }
+  color: black; }
 
 .form input[type=submit]:hover {
   background-color: #00a0b5;
-  color: white; }
+  color: black; }
 
-.Nav {
-  grid-area: Nav;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #22aad7;
-  margin-top: 20px;
-  width: 100%; }
-
-.Nav a {
-  text-decoration: none; }
-
-.Nav li {
-  list-style: none; }
-
-.Nav img {
-  width: 150px; }
+nav {
+  color: black; }
 
 #propiedades {
   max-height: 700px; }
@@ -124,8 +112,7 @@
 .grilla {
   display: grid;
   grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
-  grid-template-areas: "Nav Header Header Header" "Nav Section-1 Section-1 Aside" "Nav Section-2 Section-2 Aside" "Nav Section-3 Section-3 Aside" "Footer Footer Footer Footer";
-  background-color: #007bff; }
+  grid-template-areas: "Nav Nav Nav Nav" "Section-1 Section-1 Section-1 Section-1" "Section-2 Section-2 Section-2 Section-2" "Section-3 Section-3 Section-3 Section-3" "Footer Footer Footer Footer"; }
 
 .Aside {
   grid-area: Aside; }
@@ -146,4 +133,8 @@
 
 @media (max-width: 480px) {
   .Section-1 img {
+    display: none; }
+  #servicios {
+    display: none; }
+  #servicios1 {
     display: none; } }

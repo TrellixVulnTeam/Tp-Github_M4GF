@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     background: url(../img/fondo.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
 
     
 }
@@ -20,12 +23,12 @@
     display: grid;
     grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
     grid-template-areas:
-        "Nav Header Header Header"
-        "Nav Section-1 Section-1 Aside"
-        "Nav Section-2 Section-2 Aside"
-        "Nav Section-3 Section-3 Aside"
+        "Nav Nav Nav Nav"
+        "Section-1 Section-1 Section-1 Section-1"
+        "Section-2 Section-2 Section-2 Section-2"
+        "Section-3 Section-3 Section-3 Section-3"
         "Footer Footer Footer Footer";
-    background-color: #007bff;
+    ;
 }
 
 .Aside {
@@ -62,5 +65,11 @@
 @media (max-width: 480px){
     .Section-1 img{
         display: none;
+    }
+    #servicios {
+        display: none;
+    }
+    #servicios1{
+       display: none;
     }
 }

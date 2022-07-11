@@ -1,21 +1,3 @@
-.Nav {
-    grid-area: Nav;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(34, 170, 215);
-    margin-top: 20px;
-    width: 100%
-}
-
-.Nav a{
-    text-decoration: none;
-}
-
-.Nav li{
-    list-style: none
-}
-
-.Nav img {
-width: 150px;
+nav {
+    color: black;
 }
